@@ -1,0 +1,11 @@
+# Main tasks file. From here control will flow to other tasks in this role
+
+# ---
+# - include: install_pykmip.yml
+#   when: deployment_usecase == "fsws"
+
+# - include: install_pykmip_service.yml
+#   when: deployment_usecase == "skc"
+
+# - include: copy_pykmip_certs.yml
+#   when: deployment == "containers"
